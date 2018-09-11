@@ -1,4 +1,4 @@
-## OTTO-hardware
+## OTTO-project
 Hardware prototype for the OTTO Synthetizer 
 
 Use Kicad to open the project
