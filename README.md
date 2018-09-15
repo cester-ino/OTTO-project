@@ -1,5 +1,5 @@
 ## OTTO-project
-Hardware prototype for the OTTO Synthetizer 
+Hardware prototype for the OTTO Synthesizer 
 
 Use Kicad to open the project
 
