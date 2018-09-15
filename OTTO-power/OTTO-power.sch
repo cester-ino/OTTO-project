@@ -599,12 +599,12 @@ F 3 "" H 1100 7400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J2
+L Connector_Generic:Conn_01x02 J3
 U 1 1 5BA03FDC
 P 900 7400
-AR Path="/5BA03FDC" Ref="J2"  Part="1" 
+AR Path="/5BA03FDC" Ref="J3"  Part="1" 
 AR Path="/5DEA7844/5BA03FDC" Ref="J?"  Part="1" 
-F 0 "J2" V 866 7212 50  0000 R CNN
+F 0 "J3" V 866 7212 50  0000 R CNN
 F 1 "battery" V 775 7212 50  0000 R CNN
 F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 900 7400 50  0001 C CNN
 F 3 "~" H 900 7400 50  0001 C CNN
@@ -1077,17 +1077,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 2800 4100 2700
 Connection ~ 5300 2800
-$Comp
-L Connector:Barrel_Jack J3
-U 1 1 5B9C3E9D
-P 1050 1900
-F 0 "J3" H 1105 2225 50  0000 C CNN
-F 1 "Barrel_Jack" H 1105 2134 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1100 1860 50  0001 C CNN
-F 3 "~" H 1100 1860 50  0001 C CNN
-	1    1050 1900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x07 J1
 U 1 1 5B9D1C0B

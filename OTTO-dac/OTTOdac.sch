@@ -1236,75 +1236,75 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x10 J?
 U 1 1 5B898507
-P 1350 5950
+P 750 5950
 AR Path="/5B8985E7/5B898507" Ref="J?"  Part="1" 
 AR Path="/5B898507" Ref="J1"  Part="1" 
-F 0 "J1" V 1474 5896 50  0000 C CNN
-F 1 "Conn_01x10" V 1565 5896 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 1350 5950 50  0001 C CNN
-F 3 "~" H 1350 5950 50  0001 C CNN
-	1    1350 5950
-	0    1    1    0   
+F 0 "J1" V 874 5896 50  0000 C CNN
+F 1 "Conn_01x10" V 965 5896 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 750 5950 50  0001 C CNN
+F 3 "~" H 750 5950 50  0001 C CNN
+	1    750  5950
+	-1   0    0    1   
 $EndComp
-Text GLabel 1350 5500 1    50   Input ~ 0
+Text GLabel 1200 5950 2    50   Input ~ 0
 PIN38
-Text GLabel 1450 5500 1    50   Input ~ 0
+Text GLabel 1200 6050 2    50   Input ~ 0
 PIN40
-Text GLabel 1650 5500 1    50   Input ~ 0
+Text GLabel 1200 6250 2    50   Input ~ 0
 PIN35
-Text GLabel 1550 5500 1    50   Input ~ 0
+Text GLabel 1200 6150 2    50   Input ~ 0
 PIN12
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5B898512
-P 850 5150
+P 1550 5450
 AR Path="/5B8985E7/5B898512" Ref="#PWR?"  Part="1" 
 AR Path="/5B898512" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 850 5000 50  0001 C CNN
-F 1 "+3.3V" H 865 5323 50  0000 C CNN
-F 2 "" H 850 5150 50  0001 C CNN
-F 3 "" H 850 5150 50  0001 C CNN
-	1    850  5150
-	1    0    0    -1  
+F 0 "#PWR05" H 1550 5300 50  0001 C CNN
+F 1 "+3.3V" H 1565 5623 50  0000 C CNN
+F 2 "" H 1550 5450 50  0001 C CNN
+F 3 "" H 1550 5450 50  0001 C CNN
+	1    1550 5450
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR08
 U 1 1 5B89851E
-P 1050 5150
+P 1550 5650
 AR Path="/5B89851E" Ref="#PWR08"  Part="1" 
 AR Path="/5DBFB2B5/5B89851E" Ref="#PWR?"  Part="1" 
 AR Path="/5B8985E7/5B89851E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR08" H 1050 5000 50  0001 C CNN
-F 1 "+5V" H 1065 5323 50  0000 C CNN
-F 2 "" H 1050 5150 50  0001 C CNN
-F 3 "" H 1050 5150 50  0001 C CNN
-	1    1050 5150
-	1    0    0    -1  
+F 0 "#PWR08" H 1550 5500 50  0001 C CNN
+F 1 "+5V" H 1565 5823 50  0000 C CNN
+F 2 "" H 1550 5650 50  0001 C CNN
+F 3 "" H 1550 5650 50  0001 C CNN
+	1    1550 5650
+	0    1    1    0   
 $EndComp
-Text GLabel 1250 5450 1    50   Input ~ 0
+Text GLabel 1250 5850 2    50   Input ~ 0
 PIN3
-Text GLabel 1150 5450 1    50   Input ~ 0
+Text GLabel 1250 5750 2    50   Input ~ 0
 PIN5
 Wire Wire Line
-	850  5750 850  5150
+	950  5450 1550 5450
 Wire Wire Line
-	950  5750 950  5650
+	950  5550 1050 5550
 Wire Wire Line
-	1050 5750 1050 5150
+	950  5650 1550 5650
 Wire Wire Line
-	1150 5750 1150 5450
+	950  5750 1250 5750
 Wire Wire Line
-	1250 5750 1250 5450
+	950  5850 1250 5850
 Wire Wire Line
-	1650 5750 1650 5500
+	950  6250 1200 6250
 Wire Wire Line
-	1550 5750 1550 5500
+	950  6150 1200 6150
 Wire Wire Line
-	1450 5750 1450 5500
+	950  6050 1200 6050
 Wire Wire Line
-	1350 5750 1350 5500
+	950  5950 1200 5950
 Wire Wire Line
-	1750 5750 1750 5650
+	950  6350 1050 6350
 Text GLabel 1800 4100 0    50   Input ~ 0
 PIN38
 Text GLabel 1800 4200 0    50   Input ~ 0
@@ -1353,25 +1353,25 @@ Connection ~ 3800 5300
 Wire Wire Line
 	3800 5300 4000 5300
 Wire Wire Line
-	950  5650 1750 5650
+	1050 5550 1050 6350
 $Comp
 L power:GNDREF #PWR?
 U 1 1 5BA688CC
-P 2000 5700
+P 1000 6600
 AR Path="/5B8985E7/5BA688CC" Ref="#PWR?"  Part="1" 
 AR Path="/5BA688CC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2000 5450 50  0001 C CNN
-F 1 "GNDREF" H 2005 5527 50  0000 C CNN
-F 2 "" H 2000 5700 50  0001 C CNN
-F 3 "" H 2000 5700 50  0001 C CNN
-	1    2000 5700
-	1    0    0    -1  
+F 0 "#PWR?" H 1000 6350 50  0001 C CNN
+F 1 "GNDREF" H 1005 6427 50  0000 C CNN
+F 2 "" H 1000 6600 50  0001 C CNN
+F 3 "" H 1000 6600 50  0001 C CNN
+	1    1000 6600
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1750 5650 2000 5650
+	1050 6350 1050 6600
 Wire Wire Line
-	2000 5650 2000 5700
-Connection ~ 1750 5650
+	1050 6600 1000 6600
+Connection ~ 1050 6350
 Wire Wire Line
 	5650 3600 5650 3400
 Wire Wire Line

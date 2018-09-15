@@ -1,0 +1,495 @@
+EESchema Schematic File Version 4
+LIBS:OTTO-main-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F1:STM32F103CBTx U1
+U 1 1 5B9EECE9
+P 2100 3600
+F 0 "U1" H 2050 2014 50  0000 C CNN
+F 1 "STM32F103CBTx" H 2050 1923 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 1500 2200 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 2100 3600 50  0001 C CNN
+	1    2100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2100 2000 2000
+Wire Wire Line
+	2000 2000 2100 2000
+Wire Wire Line
+	2200 2000 2200 2100
+Wire Wire Line
+	2100 2100 2100 2000
+Connection ~ 2100 2000
+Wire Wire Line
+	2100 2000 2200 2000
+$Comp
+L Device:C C5
+U 1 1 5B9EEDF1
+P 1800 1650
+F 0 "C5" H 1915 1696 50  0000 L CNN
+F 1 "1uf" H 1915 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1838 1500 50  0001 C CNN
+F 3 "~" H 1800 1650 50  0001 C CNN
+	1    1800 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5B9EEF5F
+P 1450 1650
+F 0 "C4" H 1565 1696 50  0000 L CNN
+F 1 "1uf" H 1565 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1488 1500 50  0001 C CNN
+F 3 "~" H 1450 1650 50  0001 C CNN
+	1    1450 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5B9EEF85
+P 1100 1650
+F 0 "C1" H 1215 1696 50  0000 L CNN
+F 1 "1uf" H 1215 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1138 1500 50  0001 C CNN
+F 3 "~" H 1100 1650 50  0001 C CNN
+	1    1100 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2000 2100 1450
+Wire Wire Line
+	2100 1450 1800 1450
+Wire Wire Line
+	1800 1450 1800 1500
+Wire Wire Line
+	1800 1450 1450 1450
+Wire Wire Line
+	1450 1450 1450 1500
+Connection ~ 1800 1450
+Wire Wire Line
+	1450 1450 1100 1450
+Wire Wire Line
+	1100 1450 1100 1500
+Connection ~ 1450 1450
+Wire Wire Line
+	1800 1800 1800 1850
+Wire Wire Line
+	1800 1850 1450 1850
+Wire Wire Line
+	1450 1850 1450 1800
+Wire Wire Line
+	1450 1850 1100 1850
+Wire Wire Line
+	1100 1850 1100 1800
+Connection ~ 1450 1850
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5B9EF8C4
+P 1450 1950
+F 0 "#PWR0101" H 1450 1700 50  0001 C CNN
+F 1 "GNDREF" H 1455 1777 50  0000 C CNN
+F 2 "" H 1450 1950 50  0001 C CNN
+F 3 "" H 1450 1950 50  0001 C CNN
+	1    1450 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1850 1450 1950
+Text GLabel 1200 2700 0    50   Input ~ 0
+OSC_IN
+Text GLabel 1200 2800 0    50   Input ~ 0
+OSC_OUT
+Wire Wire Line
+	1200 2700 1400 2700
+Wire Wire Line
+	1200 2800 1400 2800
+Text GLabel 1850 5800 2    50   Input ~ 0
+OSC_IN
+Text GLabel 1850 6100 2    50   Input ~ 0
+OSC_OUT
+$Comp
+L Device:Crystal Y1
+U 1 1 5B9F0C39
+P 1550 5950
+F 0 "Y1" V 1504 6081 50  0000 L CNN
+F 1 "8mhz" V 1595 6081 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 1550 5950 50  0001 C CNN
+F 3 "~" H 1550 5950 50  0001 C CNN
+	1    1550 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 6100 1850 6100
+Wire Wire Line
+	1550 5800 1850 5800
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 5B9F21B5
+P 850 6100
+F 0 "#PWR0102" H 850 5850 50  0001 C CNN
+F 1 "GNDREF" H 855 5927 50  0000 C CNN
+F 2 "" H 850 6100 50  0001 C CNN
+F 3 "" H 850 6100 50  0001 C CNN
+	1    850  6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  6100 850  6100
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 5B9F2D90
+P 850 5800
+F 0 "#PWR0103" H 850 5550 50  0001 C CNN
+F 1 "GNDREF" H 855 5627 50  0000 C CNN
+F 2 "" H 850 5800 50  0001 C CNN
+F 3 "" H 850 5800 50  0001 C CNN
+	1    850  5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  5800 850  5800
+$Comp
+L Device:C C3
+U 1 1 5B9F31EC
+P 1100 6100
+F 0 "C3" V 950 6100 50  0000 C CNN
+F 1 "22pf" V 850 6100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1138 5950 50  0001 C CNN
+F 3 "~" H 1100 6100 50  0001 C CNN
+	1    1100 6100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5B9F3A1E
+P 1100 5800
+F 0 "C2" V 1352 5800 50  0000 C CNN
+F 1 "22pf" V 1261 5800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1138 5650 50  0001 C CNN
+F 3 "~" H 1100 5800 50  0001 C CNN
+	1    1100 5800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1250 6100 1550 6100
+Connection ~ 1550 6100
+Wire Wire Line
+	1250 5800 1550 5800
+Connection ~ 1550 5800
+$Comp
+L Connector_Generic:Conn_01x07 J2
+U 1 1 5B9CEF9A
+P 10500 1250
+F 0 "J2" H 10579 1292 50  0000 L CNN
+F 1 "POWER_BOARD" H 10579 1201 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 10500 1250 50  0001 C CNN
+F 3 "~" H 10500 1250 50  0001 C CNN
+	1    10500 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 10050 950  0    50   Input ~ 0
+GND
+Wire Wire Line
+	10050 950  10300 950 
+Text GLabel 10050 1050 0    50   Input ~ 0
+5V
+Wire Wire Line
+	10050 1050 10300 1050
+Text GLabel 10050 1150 0    50   Input ~ 0
+LED_POW
+Wire Wire Line
+	10050 1150 10300 1150
+Text GLabel 10050 1250 0    50   Input ~ 0
+OUT_PIN
+Wire Wire Line
+	10050 1250 10300 1250
+Text GLabel 10050 1350 0    50   Input ~ 0
+SENSE_PIN
+Wire Wire Line
+	10050 1350 10300 1350
+Text GLabel 10050 1450 0    50   Input ~ 0
+LED_G
+Wire Wire Line
+	10050 1450 10300 1450
+Text GLabel 10050 1550 0    50   Input ~ 0
+LED_R
+Wire Wire Line
+	10050 1550 10300 1550
+$Comp
+L Connector_Generic:Conn_01x10 J3
+U 1 1 5B9D1344
+P 10500 2450
+F 0 "J3" H 10580 2442 50  0000 L CNN
+F 1 "AUDIO_BOARD" H 10580 2351 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 10500 2450 50  0001 C CNN
+F 3 "~" H 10500 2450 50  0001 C CNN
+	1    10500 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 10050 2250 0    50   Input ~ 0
+BCLK
+Wire Wire Line
+	10050 2250 10300 2250
+Text GLabel 10050 2550 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	10050 2550 10300 2550
+Text GLabel 10050 2650 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	10050 2650 10300 2650
+Text GLabel 10050 2750 0    50   Input ~ 0
+5V
+Wire Wire Line
+	10050 2750 10300 2750
+Text GLabel 10050 2950 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	10050 2950 10300 2950
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5B9D55A4
+P 10500 3450
+F 0 "J4" H 10579 3442 50  0000 L CNN
+F 1 "MICROPHONE" H 10579 3351 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10500 3450 50  0001 C CNN
+F 3 "~" H 10500 3450 50  0001 C CNN
+	1    10500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Microphone_Condenser MK1
+U 1 1 5B9D56B0
+P 9850 3500
+F 0 "MK1" H 9720 3454 50  0000 R CNN
+F 1 "MicrophonE" H 9720 3545 50  0000 R CNN
+F 2 "" V 9850 3600 50  0001 C CNN
+F 3 "~" V 9850 3600 50  0001 C CNN
+	1    9850 3500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9850 3300 10100 3300
+Wire Wire Line
+	10100 3300 10100 3450
+Wire Wire Line
+	10100 3450 10300 3450
+Wire Wire Line
+	9850 3700 10100 3700
+Wire Wire Line
+	10100 3700 10100 3550
+Wire Wire Line
+	10100 3550 10300 3550
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5B9DB147
+P 6300 2550
+F 0 "J1" H 6300 4028 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 6300 3937 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 6300 2550 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6300 2550 50  0001 C CNN
+	1    6300 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7350 1950 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	7350 1950 7100 1950
+Text GLabel 7350 2050 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	7350 2050 7100 2050
+Wire Wire Line
+	5900 3850 6000 3850
+Connection ~ 6000 3850
+Wire Wire Line
+	6000 3850 6100 3850
+Connection ~ 6100 3850
+Wire Wire Line
+	6100 3850 6200 3850
+Connection ~ 6200 3850
+Wire Wire Line
+	6200 3850 6300 3850
+Connection ~ 6300 3850
+Wire Wire Line
+	6300 3850 6400 3850
+Connection ~ 6400 3850
+Wire Wire Line
+	6400 3850 6500 3850
+Connection ~ 6500 3850
+Wire Wire Line
+	6500 3850 6600 3850
+Connection ~ 6600 3850
+$Comp
+L power:GNDREF #PWR0104
+U 1 1 5B9E4F62
+P 6600 4000
+F 0 "#PWR0104" H 6600 3750 50  0001 C CNN
+F 1 "GNDREF" H 6605 3827 50  0000 C CNN
+F 2 "" H 6600 4000 50  0001 C CNN
+F 3 "" H 6600 4000 50  0001 C CNN
+	1    6600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3850 6600 4000
+$Comp
+L power:GNDREF #PWR0105
+U 1 1 5B9E6579
+P 9650 2950
+F 0 "#PWR0105" H 9650 2700 50  0001 C CNN
+F 1 "GNDREF" H 9655 2777 50  0000 C CNN
+F 2 "" H 9650 2950 50  0001 C CNN
+F 3 "" H 9650 2950 50  0001 C CNN
+	1    9650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2050 10300 2050
+Wire Wire Line
+	9650 2050 9650 2850
+Wire Wire Line
+	9650 2850 10300 2850
+Connection ~ 9650 2850
+Wire Wire Line
+	9650 2850 9650 2950
+$Comp
+L Driver_Display:ILI9341 U2
+U 1 1 5B9FC7CB
+P 10600 5000
+F 0 "U2" H 10780 5050 50  0000 L CNN
+F 1 "ILI9341" H 10780 4959 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Horizontal" H 10600 5950 50  0001 C CNN
+F 3 "" H 10600 5950 50  0001 C CNN
+	1    10600 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4150 10300 4150
+$Comp
+L power:GNDREF #PWR0106
+U 1 1 5B9FF38E
+P 9650 5950
+F 0 "#PWR0106" H 9650 5700 50  0001 C CNN
+F 1 "GNDREF" H 9655 5777 50  0000 C CNN
+F 2 "" H 9650 5950 50  0001 C CNN
+F 3 "" H 9650 5950 50  0001 C CNN
+	1    9650 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4850 10300 4850
+Wire Wire Line
+	9650 4150 9650 4850
+Connection ~ 9650 4850
+Wire Wire Line
+	9650 4850 9650 5150
+Wire Wire Line
+	10300 5150 9650 5150
+Connection ~ 9650 5150
+Wire Wire Line
+	9650 5150 9650 5250
+Wire Wire Line
+	10300 5250 9650 5250
+Connection ~ 9650 5250
+Wire Wire Line
+	9650 5250 9650 5350
+Wire Wire Line
+	10300 5350 9650 5350
+Connection ~ 9650 5350
+Wire Wire Line
+	9650 5350 9650 5450
+Wire Wire Line
+	10300 5450 9650 5450
+Connection ~ 9650 5450
+Wire Wire Line
+	9650 5450 9650 5950
+NoConn ~ 10300 5550
+NoConn ~ 10300 5650
+NoConn ~ 10300 5750
+NoConn ~ 10300 5850
+Text GLabel 10050 4250 0    50   Input ~ 0
+GPIO25
+Wire Wire Line
+	10050 4250 10300 4250
+Text GLabel 10050 4350 0    50   Input ~ 0
+SCLK_0
+Wire Wire Line
+	10050 4350 10300 4350
+Text GLabel 7350 3050 2    50   Input ~ 0
+SCLK_0
+Wire Wire Line
+	7100 3250 7050 3250
+Text GLabel 10050 4450 0    50   Input ~ 0
+GPIO24
+Wire Wire Line
+	10050 4450 10300 4450
+Text GLabel 10050 4550 0    50   Input ~ 0
+CE0
+Wire Wire Line
+	10050 4550 10300 4550
+Text GLabel 7350 2750 2    50   Input ~ 0
+CE0
+Wire Wire Line
+	7350 2750 7100 2750
+Wire Wire Line
+	7100 3050 7350 3050
+Text GLabel 10050 4650 0    50   Input ~ 0
+MOSI_0
+Wire Wire Line
+	10050 4650 10300 4650
+Text GLabel 10050 4750 0    50   Input ~ 0
+MISO_0
+Wire Wire Line
+	10050 4750 10300 4750
+Text GLabel 7350 2950 2    50   Input ~ 0
+MOSI_0
+Wire Wire Line
+	7350 2950 7100 2950
+Text GLabel 7350 2850 2    50   Input ~ 0
+MISO_0
+Wire Wire Line
+	7350 2850 7100 2850
+Text GLabel 5250 2550 0    50   Input ~ 0
+I2S_RX
+Wire Wire Line
+	5250 2550 5500 2550
+Text GLabel 5250 2350 0    50   Input ~ 0
+LR_CLK
+Wire Wire Line
+	5250 2350 5500 2350
+Text GLabel 10050 2150 0    50   Input ~ 0
+LR_CLK
+Wire Wire Line
+	10050 2150 10300 2150
+Text GLabel 10050 2450 0    50   Input ~ 0
+I2S_TX
+Wire Wire Line
+	10050 2450 10300 2450
+Text GLabel 5250 2450 0    50   Input ~ 0
+I2S_TX
+Wire Wire Line
+	5250 2450 5500 2450
+Text GLabel 5250 2150 0    50   Input ~ 0
+BCLK
+Wire Wire Line
+	5250 2150 5500 2150
+Text GLabel 10050 2350 0    50   Input ~ 0
+I2S_RX
+Wire Wire Line
+	10050 2350 10300 2350
+$EndSCHEMATC
