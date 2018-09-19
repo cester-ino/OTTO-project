@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:OTTO-powernew-cache
+LIBS:OTTO-power-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1202,8 +1202,6 @@ Wire Wire Line
 Wire Wire Line
 	2950 5950 3100 5950
 Wire Wire Line
-	2950 6350 3100 6350
-Wire Wire Line
 	2950 6650 3100 6650
 Wire Wire Line
 	2950 6450 3100 6450
@@ -1274,6 +1272,4 @@ F 3 "~" H 2750 6350 50  0001 C CNN
 	1    2750 6350
 	-1   0    0    1   
 $EndComp
-Text GLabel 3100 6350 2    50   Input ~ 0
-LOW_BAT
 $EndSCHEMATC
