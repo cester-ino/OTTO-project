@@ -1404,5 +1404,4 @@ Wire Wire Line
 	9350 3450 9550 3450
 Wire Wire Line
 	9550 3450 9550 3200
-Connection ~ 9550 3450
 $EndSCHEMATC
